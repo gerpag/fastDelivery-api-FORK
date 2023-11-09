@@ -10,7 +10,7 @@ const cookieParser = require("cookie-parser");
 const routes = require("./routes/index");
 const app = express();
 
-const PORT = process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 
 const server = app.listen(PORT, () => {
