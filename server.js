@@ -31,6 +31,7 @@ app.use(bodyParser.json());
 app.use(cookieParser());
 
 app.use("/api/v1", routes);
+app.use("/", (req, res) =>{res.send("Hello Word")}
 
 //mongoose
  // .connect(process.env.MONGODB_URL, {
