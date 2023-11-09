@@ -32,20 +32,20 @@ app.use(cookieParser());
 
 app.use("/api/v1", routes);
 
-mongoose
-  .connect(process.env.MONGODB_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log("MongoDB connected");
-    server;
+//mongoose
+ // .connect(process.env.MONGODB_URL, {
+   // useNewUrlParser: true,
+   // useUnifiedTopology: true,
+ // })
+ // .then(() => {
+   // console.log("MongoDB connected");
+   // server;
     
-  })
-  .catch((err) => {
-    console.error(err);
-    process.exit(1);
-  });
+//  })
+//  .catch((err) => {
+ //   console.error(err);
+ //   process.exit(1);
+ // });
 
 
   module.exports = {app, server};
